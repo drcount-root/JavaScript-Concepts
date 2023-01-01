@@ -38,7 +38,7 @@ The `then` method of the promise allows you to specify a **callback function** t
 
 What is **new** keyword before Constructor ?
 
-> In JavaScript, the new keyword is used to create an instance of an object. When you use the new keyword to create an instance of an object, the following steps occur: \1. A new object is created. \2. The object is returned. \3. The object's prototype is set to the prototype property of the constructor function. \4. The this keyword is set to the new object inside the constructor function. \5. The constructor function is called with the arguments specified in the new expression.
+> In JavaScript, the new keyword is used to create an instance of an object. When you use the new keyword to create an instance of an object, the following steps occur: <br>1. A new object is created. <br>2. The object is returned. <br>3. The object's prototype is set to the prototype property of the constructor function. <br>4. The this keyword is set to the new object inside the constructor function. <br>5. The constructor function is called with the arguments specified in the new expression.
 
 
 What is **new** keyword before Promise Constructor ? 
@@ -46,7 +46,8 @@ What is **new** keyword before Promise Constructor ?
 
 Here is an example of using the new keyword to create a Promise object: 
 
-```const myPromise = new Promise((resolve, reject) => {
+```
+const myPromise = new Promise((resolve, reject) => {
   // Perform asynchronous operation
 });
 ```
