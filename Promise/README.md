@@ -10,8 +10,6 @@ A promise in JavaScript is asynchronous, meaning it takes time to resolve or fin
 
 And allows you to specify a callback function to be called when the value becomes available (Promise get resolved).
 
-
-
 There are 3 states of Promise -
 
 1. `Pending` : The initial state of a promise, indicating that the asynchronous operation has not yet completed.
