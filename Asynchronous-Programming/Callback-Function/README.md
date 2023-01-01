@@ -89,10 +89,19 @@ step1(function() {
     });
   });
 });
+
+// Output:
+// Step 1 (logs to console immediately, then 4s timer starts)
+// Step 2 (after 4s of logging 'Step 1', it logs to console, then 2s timer starts)
+// Step 3 (after 2s of logging 'Step 2', it logs to console, then 3s timer starts)
+// All done! (after 3s of logging 'Step 3', it logs to console)
 ```
 
 In this example, the step1 function is called first, and when it is done, it calls the step2 function, which in turn calls the step3 function. When the step3 function is done, it logs a message to the console.
 
 This example shows how callback functions can be nested inside each other, creating a deeply nested structure that can be difficult to read and understand. This kind of structure is often referred to as "callback hell" because it can be difficult to maintain and debug.
 
-There are several ways to avoid callback hell, such as using promises or async/await. These techniques can help make your code more readable and easier to understand.
+### Fix / How to avoid getting into Callback hell
+
+There are several ways to avoid callback hell, such as -
+using **promises** or **async/await**. These techniques can help make your code more readable and easier to understand.
