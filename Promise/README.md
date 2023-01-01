@@ -10,7 +10,7 @@ A promise in JavaScript is asynchronous, meaning it takes time to resolve or fin
 
 And allows you to specify a callback function to be called when the value becomes available (Promise get resolved).
 
-### A good example of promise in real life - Resume selection process for job opportunity
+
 
 There are 3 states of Promise -
 
@@ -55,6 +55,8 @@ const myPromise = new Promise((resolve, reject) => {
 In this example, a new Promise object is created and assigned to the myPromise variable. The Promise constructor is called with the executor function as an argument, and the new keyword sets the this keyword inside the executor function to the new Promise object.
 
 <br>
+
+### A good example of promise in real life - Resume selection process for job opportunity
 
 If the return value of the interview (promise) is a “success” (resolved/fulfilled), the candidate will get a position. If it fails, we proceed to reject his application.
 
