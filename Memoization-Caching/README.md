@@ -4,6 +4,6 @@ Memoization is a specific form of Caching, that involves caching that returns va
 
 Memoization is a technique for optimizing the performance of a function by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
 
-#### Example:
+#### Application Example:
 
 Fibonacci Series, factorial of a number, makes recursive algorithms efficient.
