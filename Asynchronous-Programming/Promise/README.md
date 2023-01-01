@@ -65,3 +65,17 @@ To specify what callbacks to call, you use the following two functions:
 `resolve(value)`: This indicates that the asynchronous task was successful. This will call the fulfillment callback in the then() handler.
 
 `reject(error)`: This indicates an error while trying to run the asynchronous task. This will call the rejection callback in the then() handler.
+
+## Promise Chaining
+
+Promise chaining is a pattern that allows you to chain together multiple asynchronous operations, each of which returns a promise. You can think of it as a way to execute asynchronous functions in a specific order, with the output of each function being passed as the input to the next one.
+
+Look into **Promise-Chaining-Using-then.js**, to get better understanding.
+
+## Error Handling
+
+Using catch() block to your chain. 
+
+The catch() method will always get called whenever an error is encountered at any point along the promise chain.
+
+Look into **Promise-Error-Handling-Using-catch.js**, to get better understanding.

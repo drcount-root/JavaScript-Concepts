@@ -71,23 +71,3 @@ watchTutorialPromise()
 
 // Output:
 // Rejected: User Watching Cat Meme WebDevSimplified < Cat
-
-//
-//
-//
-//
-//
-//
-//
-//
-
-// Using callbacks can lead us to get stucked in callback hell
-
-//
-//
-//
-//
-//
-//
-//
-//

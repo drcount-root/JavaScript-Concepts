@@ -54,6 +54,17 @@ console.log(mainFunctionCC(10)(45));
 // 10 + 45 = 55
 ```
 
+### Why we use Callback functions ? (ADVANTAGES)
+
+> 1. The main advantage of using callback is that you can wait for the previous operations to be completed then only execute the next operation. Asynchronous programming. <br> 2. Callbacks are higher order functions so its provides the flexibility to pass the another functions as an arguments. <br> 3. Consider the use case where second call is dependent on the response of first call. At that time callback is the most usable thing. <br> 4. Callback functions are having access of both , its own scope as well as the scope of the function where it is being called.
+
+
+### Major Problem / DISADVANTAGE of Callback functions -
+
+> 1. Callback Hell  – The main disadvantage of using callback is Callback Hell. Callback hell is essentially nested callbacks where each callback is dependent on previous callback. <br> 2. Callback hell affects the readability and maintainability of the code.
+
+
+
 ### What is Callback Hell / Pyramid Of Doom ?
 
 > Callback hell is a term used to describe a situation where callback functions are nested inside each other in a deeply nested, difficult-to-read structure.
