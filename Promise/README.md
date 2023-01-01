@@ -10,7 +10,7 @@ A promise in JavaScript is asynchronous, meaning it takes time to resolve or fin
 
 And allows you to specify a callback function to be called when the value becomes available (Promise get resolved).
 
-/
+
 
 There are 3 states of Promise -
 
@@ -18,7 +18,7 @@ There are 3 states of Promise -
 2. `Resolved (Fulfilled)` : The state of a promise representing a successful completion of the asynchronous operation.
 3. `Rejected` : The state of a promise representing a failed completion of the asynchronous operation.
 
-#### Example
+### Example
 
 ```
 const myPromise = new Promise((resolve, reject) => {
@@ -38,7 +38,7 @@ The `then` method of the promise allows you to specify a **callback function** t
 
 What is **new** keyword before Constructor ?
 
-> In JavaScript, the new keyword is used to create an instance of an object. When you use the new keyword to create an instance of an object, the following steps occur: 1. A new object is created. 2. The object is returned. 3. The object's prototype is set to the prototype property of the constructor function. 4. The this keyword is set to the new object inside the constructor function. 5. The constructor function is called with the arguments specified in the new expression.
+> In JavaScript, the new keyword is used to create an instance of an object. When you use the new keyword to create an instance of an object, the following steps occur: \1. A new object is created. \2. The object is returned. \3. The object's prototype is set to the prototype property of the constructor function. \4. The this keyword is set to the new object inside the constructor function. \5. The constructor function is called with the arguments specified in the new expression.
 
 
 What is **new** keyword before Promise Constructor ? 
