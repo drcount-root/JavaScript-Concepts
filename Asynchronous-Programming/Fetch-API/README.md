@@ -111,8 +111,12 @@ console.log(array);
 // [1, 2, 3, 4]
 
 ```
+<br>
+<br>
+<br>
 
-### Use cases of `response.json()`, `JSON.stringify()` & `JSON.parse()`:
+## Use cases of `response.json()`, `JSON.stringify()` & `JSON.parse()`:
+
 
 ```
 `JS Object or Array` => `JSON String`
@@ -150,6 +154,8 @@ In this example, the createTodo function makes a POST request to the /todos endp
 The response.json() method is called on the response object to parse the response as JSON and return a promise that resolves to the parsed data. The await keyword is used to wait for the promise to resolve, and the resulting data is logged to the console.
 
 <br>
+<br>
+<br>
 
 ```
 `JSON String` => `JS Object or Array`
@@ -174,6 +180,8 @@ In this example, the fetch function is used to make an HTTP request to retrieve 
 
 Then, the JSON.parse() function is called on the json variable to parse the JSON string and return the JavaScript equivalent. The resulting data is stored in the data variable and logged to the console.
 
+<br>
+<br>
 <br>
 
 `response.json()` is a method of the Response object that is returned by the fetch function. It parses the body of the response as JSON and returns a promise that resolves to the parsed JSON data. It is often used when making HTTP requests to retrieve data in JSON format.
