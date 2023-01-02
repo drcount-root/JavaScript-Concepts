@@ -99,6 +99,6 @@ Using defer in this way can improve the performance of your page by allowing the
 
 <br>
 
-#### The important thing to note is that the browser does not stop parsing the HTML to get the img or other resources. (downloaded in background)
+## The important thing to note is that the browser does not stop parsing the HTML to get the img or other resources. (downloaded in background)
 
-#### Order: HTML > Stylesheets > Resources/Assets (images, videos etc.) > Scripts
+#### Order: HTML ➡️ Stylesheets ➡️ Resources/Assets (images, videos etc.) ➡️ Scripts
