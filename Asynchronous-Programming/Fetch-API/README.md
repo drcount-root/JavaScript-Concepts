@@ -117,6 +117,7 @@ console.log(array);
 
 ## Use cases of `response.json()`, `JSON.stringify()` & `JSON.parse()`:
 
+<br>
 
 ```
 `JS Object or Array` => `JSON String`
