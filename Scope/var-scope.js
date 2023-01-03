@@ -22,6 +22,8 @@ try {
   console.log(err.name + " : " + err.message);
 }
 
+// I used try-catch just to catch the error, so that it couldn't block execution of next lines.
+
 //
 //
 //
