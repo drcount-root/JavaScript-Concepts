@@ -1,1 +1,1 @@
-![Accessible-Scopes](https://github.com/drcount-root/JavaScript-Concepts/Scope/assets/var-let-const-scope-thing.png)
+![Accessible-Scopes](https://github.com/drcount-root/JavaScript-Concepts/blob/main/Scope/assets/var-let-const-scope-thing.png)
