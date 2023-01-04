@@ -7,8 +7,6 @@
 
 ### Cookies vs. Web Storage
 
-**Q:1** : Cookies vs. Web Storage
-
 > Cookies are intended to be read by the server, whereas localStorage can only be read by the browser. Thus, cookies are restricted to small data volumes(4KB), while localStorage can store more data(10MB).
 
 > **1. Sent with requests**: Only cookies are, not Web Storage (localStorage, sessionStorage)
