@@ -2,7 +2,7 @@
 
 ### What is Cookie?
 
-> Cookies are pieces of data, normally stored in small text files sent by the server to the user's browser, and are stored on the user's device. Cookies are designed to be a reliable mechanism for websites to remember stateful information or to record the user’s browsing activity. It is used to remember information about the user's interactions with a website, such as login status, preferences (such as your preferred language and other settings), and shopping cart items. When the user visits the website again, the browser sends the cookie back to the server. This allows the server to retrieve the information stored in the cookie and use it to customize the user's experience or track their activity on the website. This can make it easier for you to use the site the next time you visit, because your preferences will be remembered. Cookies can also be used to track your online behavior and to serve you targeted advertisements.
+> Cookies are pieces of data, normally stored in small text files sent by the web-server using the response HTTP-header to the user's browser, and are stored on the user's device. Then, the browser automatically adds them to (almost) every request to the same domain using the Cookie HTTP-header. Cookies are designed to be a reliable mechanism for websites to remember stateful information or to record the user’s browsing activity. It is used to remember information about the user's interactions with a website, such as login status, preferences (such as your preferred language and other settings), and shopping cart items. When the user visits the website again, the browser sends the cookie back to the server. This allows the server to retrieve the information stored in the cookie and use it to customize the user's experience or track their activity on the website. This can make it easier for you to use the site the next time you visit, because your preferences will be remembered. Cookies can also be used to track your online behavior and to serve you targeted advertisements.
 
 <br>
 
@@ -24,9 +24,9 @@
 
 ### 3 Types of Cookies:
 
-> 1. Session Cookies : These cookies are temporary and are deleted when the user closes the web browser. They are used to store information that is needed only for the duration of the user's visit to a website.
-> 2. Persistent Cookies : These cookies are stored on the user's device for a longer period of time, even after the web browser is closed. They are used to remember information about the user across multiple visits to a website, such as login status or preferences.
-> 3. Third-Party Cookies : Third-party cookies are set by a domain other than the one the user is visiting, and are often used for tracking and advertising purposes.
+> 1. **Session Cookies** : These cookies are temporary and are deleted when the user closes the web browser. They are used to store information that is needed only for the duration of the user's visit to a website.
+> 2. **Persistent Cookies** : These cookies are stored on the user's device for a longer period of time, even after the web browser is closed. They are used to remember information about the user across multiple visits to a website, such as login status or preferences.
+> 3. **Third-Party Cookies** : Third-party cookies are set by a domain other than the one the user is visiting, and are often used for tracking and advertising purposes.
 
 <br>
 
@@ -45,9 +45,11 @@
 
 ### How long can a Cookie last?
 
-> The duration of a cookie can be set when the cookie is created. By default, the cookie is destroyed when the current browser window is closed, but it can be made to persist for a length of time after the page is closed. Some cookies are ‘session cookies’, which means they only exist when your browser is open and are automatically deleted when you close your browser or quit the app.
+> The duration of a cookie can be set when the cookie is created. By default, the cookie is destroyed when the current browser window is closed, but it can be made to persist for a length of time after the page is closed.
 
-> Other cookies are ‘persistent cookies’, meaning they survive after your browser or app is closed and can be used by websites or apps to recognize your computer when you re-open your browser or app later.
+> Some cookies are **session cookies**, which means they only exist when your browser is open and are automatically deleted when you close your browser or quit the app.
+
+> Other cookies are **persistent cookies**, meaning they survive after your browser or app is closed and can be used by websites or apps to recognize your computer when you re-open your browser or app later. To let cookies survive a browser close, we can set either the `expires` or `max-age` option.
 
 <br>
 
