@@ -16,3 +16,7 @@
 > **3. Editable & Blockable by users**: All of them
 > 
 > **4. Expiration**: Cookies => Manually set, localStorage => Never, sessionStorage => On tab close
+>
+> **5. Accessible from**: Cookies & localStorage => Any window, sessionStorage => Same tab
+>
+> **6. Storage Capacity**: Cookies => 4KB, localStorage => 10MB, sessionStorage => 5MB
