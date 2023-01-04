@@ -12,6 +12,9 @@
 > Cookies are intended to be read by the server, whereas localStorage can only be read by the browser. Thus, cookies are restricted to small data volumes(4KB), while localStorage can store more data(10MB).
 
 > **1. Sent with requests**: Only cookies are, not Web Storage (localStorage, sessionStorage)
+> 
 > **2. Storage Location**: Cookies => Browser & Server, Web Storage(localStorage, sessionStorage) => Browser
+> 
 > **3. Editable & Blockable by users**: All of them
+> 
 > **4. Expiration**: Cookies => Manually set, localStorage => Never, sessionStorage => On tab close
