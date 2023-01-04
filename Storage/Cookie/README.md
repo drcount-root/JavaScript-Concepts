@@ -53,6 +53,10 @@
 
 <br>
 
+### cookie Storage limit: 4KB
+
+<br>
+
 ### What Information is Stored in a Cookie?
 
 > Information stored in a cookie can vary from your preferred language to location. Cookies often store your settings for a website. When you return to the site, the browser sends back the cookies that belong to the site. This allows the site to present you with information customized to fit your needs.

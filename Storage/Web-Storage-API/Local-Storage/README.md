@@ -25,3 +25,19 @@ if (localStorage.getItem('key')) {
 ```
 
 Note that the TTL is not a precise timer - it is only checked when the page is loaded or when the data is accessed using localStorage.getItem(). Also, the TTL is specified in seconds, so in the example above, the data will expire after 1 day (86400 seconds).
+
+### localStorage Storage limit: upto 10MB
+
+<br>
+
+### Pros of localStorage:
+
+1. The data stored in it has no expiration date
+2. The storage limit is about 10MB
+3. Its data is never transferred to the server
+
+### Cons of localStorage:
+
+1. Its data is plain text; hence it is not secure by design
+2. The data type is limited to string; hence it needs to be serialized
+3. Data can only be read on the client-side, not on the server-side
