@@ -81,3 +81,49 @@
 > An example of a tracking cookie is one set by Facebook. When you visit and log into Facebook, it puts a tracking cookie on your browser. This means every time you visit a site that has Facebook integrated, that site will be able to determine information such as if you have a Facebook account or not.
 
 <br>
+
+### JavaScript can create, read, and delete cookies with the document.cookie property.
+
+#### With JavaScript, a cookie can be created like this:
+
+```
+document.cookie = "username=John Doe";
+```
+
+You can also add an expiry date (in UTC time). By default, the cookie is deleted when the browser is closed:
+
+```
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";
+```
+
+With a path parameter, you can tell the browser what path the cookie belongs to. By default, the cookie belongs to the current page.
+
+```
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+```
+
+#### Read a Cookie with JavaScript
+
+```
+let x = document.cookie;
+
+// document.cookie will return all cookies in one string much like: cookie1=value; cookie2=value; cookie3=value;
+```
+
+#### Change a Cookie with JavaScript
+
+```
+document.cookie = "username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+
+// The old cookie is overwritten.
+```
+
+#### Delete a Cookie with JavaScript
+
+```
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+```
+
+You should define the cookie path to ensure that you delete the right cookie.
+
+Some browsers will not let you delete a cookie if you don't specify the path.
