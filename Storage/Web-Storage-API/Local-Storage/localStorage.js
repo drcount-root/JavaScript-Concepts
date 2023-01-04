@@ -43,3 +43,22 @@ localStorage.removeItem("Age");
 // To remove all the localStorage items
 
 localStorage.clear();
+
+//
+//
+//
+
+// localStorage accepts only strings, but we want to store some object
+
+const user = { name: "Subh" };
+
+// localStorage.setItem("user", user) // we can't set like this. This will give [obejct Object] if we do localStorage.getItem("user");
+
+// Right way to store object
+localStorage.setItem("user", JSON.stringify(user));
+
+localStorage.getItem("user"); // "{"name": "Subh"}"
+
+// Problem with it is that, it's a string. Need to convert to JS Obj
+JSON.parse(localStorage.getItem("user"));
+// {name: "Subh"}
