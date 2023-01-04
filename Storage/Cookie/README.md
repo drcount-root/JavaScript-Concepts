@@ -1,12 +1,12 @@
-### Cookies
+# Cookies
 
-**Q**: What is Cookie?
+### What is Cookie?
 
 > Cookies are pieces of data, normally stored in small text files sent by the server to the user's browser, and are stored on the user's device. Cookies are designed to be a reliable mechanism for websites to remember stateful information or to record the user’s browsing activity. It is used to remember information about the user's interactions with a website, such as login status, preferences (such as your preferred language and other settings), and shopping cart items. When the user visits the website again, the browser sends the cookie back to the server. This allows the server to retrieve the information stored in the cookie and use it to customize the user's experience or track their activity on the website. This can make it easier for you to use the site the next time you visit, because your preferences will be remembered. Cookies can also be used to track your online behavior and to serve you targeted advertisements.
 
 <br>
 
-**Q**: Reason of using Cookies
+### Reason of using Cookies
 
 > Cookies also allow you to login on one page, then move around to other pages and remain logged in. They allow you to set preferences for the display of a page, and for those preferences to be remembered the next time you return.
 
@@ -22,7 +22,7 @@
 
 <br>
 
-**Q**: 3 Types of Cookies:
+### 3 Types of Cookies:
 
 > 1. Session Cookies : These cookies are temporary and are deleted when the user closes the web browser. They are used to store information that is needed only for the duration of the user's visit to a website.
 > 2. Persistent Cookies : These cookies are stored on the user's device for a longer period of time, even after the web browser is closed. They are used to remember information about the user across multiple visits to a website, such as login status or preferences.
@@ -30,7 +30,7 @@
 
 <br>
 
-**Q**: Secure Cookies:
+### Secure Cookies:
 
 > Secure Cookies are a type of cookie that is transmitted over a secure connection (usually HTTPS). They are used to store sensitive information, such as financial data, that needs to be protected from being intercepted by third parties.
 > There are 2 main types of secure cookies:
@@ -43,7 +43,7 @@
 
 <br>
 
-**Q**: How long can a Cookie last?
+### How long can a Cookie last?
 
 > The duration of a cookie can be set when the cookie is created. By default, the cookie is destroyed when the current browser window is closed, but it can be made to persist for a length of time after the page is closed. Some cookies are ‘session cookies’, which means they only exist when your browser is open and are automatically deleted when you close your browser or quit the app.
 
@@ -51,7 +51,7 @@
 
 <br>
 
-**Q**: What Information is Stored in a Cookie?
+### What Information is Stored in a Cookie?
 
 > Information stored in a cookie can vary from your preferred language to location. Cookies often store your settings for a website. When you return to the site, the browser sends back the cookies that belong to the site. This allows the site to present you with information customized to fit your needs.
 
@@ -59,13 +59,13 @@
 
 <br>
 
-**Q**: Which Cookies are Advertising Cookies?
+### Which Cookies are Advertising Cookies?
 
 > These cookies are almost always third-party, persistent cookies. This means that the cookies can follow the user as they visit other websites.
 
 <br>
 
-**Q**: What is a Tracking Cookie?
+### What is a Tracking Cookie?
 
 > A tracking cookie is a sample of text dropped onto a browser while viewing a website. This text collects data from a user such as their activity on a website, browsing history, geographic location, purchase trends, and more.
 
