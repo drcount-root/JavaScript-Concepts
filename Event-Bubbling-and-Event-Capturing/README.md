@@ -48,9 +48,10 @@ Propagation of the events on clicking child div ->
 
 ![Event-Capturing](event-capturing.png)
 
+<br>
 
 ```
-addEventListener(param-1, param-2, param-3) 
+addEventListener(param-1, param-2, param-3)
 
 @param-1: event example- 'click'
 @param-2: callback fnc, the func which will be called when the event happen
@@ -58,3 +59,7 @@ addEventListener(param-1, param-2, param-3)
 ```
 
 `When useCapture flag set as true, event capturing mode is enabled & for false, event bubbling is enabled. Or if we don't pass anything or pass falsy value as 3rd param, then it will be bubbling.`
+
+<br>
+
+## Reference: https://www.youtube.com/watch?v=aVSf0b1jVKk&list=RDLVaVSf0b1jVKk&index=1
