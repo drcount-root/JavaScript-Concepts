@@ -66,3 +66,7 @@ document.querySelector(".child").addEventListener(
 // Parent Clicked
 // Child Clicked
 // as capturing starts from top. So it doesn't matter that we stopped propagation after child div event handler called
+
+// if we put the event.stopPropagation() inside grand parent div event handler, then the output of clicking the child div will be-
+
+// Grand Parent Clicked
