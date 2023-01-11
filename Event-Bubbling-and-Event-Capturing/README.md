@@ -18,7 +18,7 @@ To react on events we can assign a handler – a function that runs in case of a
 
 As bubbles always comes out or go upwards, event bubbling happens from `Child to Parent`, down to up of the hierarchy.
 
-### Example:
+### Flow: Event-Bubbling
 
 ![Event-Bubbling](event-bubbling.png)
 
@@ -44,7 +44,7 @@ Propagation of the events on clicking child div ->
 2. onClickParent(),
 3. onClickChild()
 
-### Example:
+### Flow: Event-Capturing
 
 ![Event-Capturing](event-capturing.png)
 
