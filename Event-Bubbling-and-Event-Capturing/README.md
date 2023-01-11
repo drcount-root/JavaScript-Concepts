@@ -20,7 +20,7 @@ As bubbles always comes out or go upwards, event bubbling happens from `Child to
 
 ### Example:
 
-![image]()
+![Event-Bubbling](event-bubbling.png)
 
 So we have 3 div's and have event handlers attached with them.
 
@@ -43,3 +43,7 @@ Propagation of the events on clicking child div ->
 1. onClickGrandParent(),
 2. onClickParent(),
 3. onClickChild()
+
+### Example:
+
+![Event-Capturing](event-capturing.png)
