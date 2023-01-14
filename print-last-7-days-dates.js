@@ -1,11 +1,11 @@
-const past7Days = [...Array(7).keys()].map((index) => {
+const pastSevenDays = [...Array(7).keys()].map((index) => {
   const date = new Date();
   date.setDate(date.getDate() - index);
 
-  return date;
+  return date.toLocaleDateString();
 });
 
-console.log(past7Days);
+console.log(pastSevenDays);
 
 // Array(7) is creating an array of 7 elements
 // console.log(...Array(7).keys());
