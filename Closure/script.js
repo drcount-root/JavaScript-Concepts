@@ -69,4 +69,25 @@ const funA = () => {
 const otherFunc = funA();
 
 otherFunc();
+// 37
 // because closure forms with p's reference, not with p's value
+
+//
+//
+//
+//
+
+function A() {
+  var b = 900;
+  function x() {
+    var a = 7;
+    function y() {
+      console.log(a, b);
+    }
+    y();
+  }
+  x();
+}
+
+A();
+// 7 900
