@@ -34,6 +34,9 @@ const printerFunc = () => {
 // printerFunc();
 
 // 1 2 3 4 5
+// for each & every loop iteration, the i is a new variable.
+// Each time setTimeout() runs, the callback has a new copy of i with it
+// As let variables are block scoped, for each & every time the loop is called & setTimeout method is called, the callback forms a closure with a new copy of i 
 
 //
 //
@@ -51,7 +54,8 @@ const printerVarFunc = () => {
 // printerVarFunc();
 
 // 6 6 6 6 6
-// As by the time the timer expires the value of i reaches to 6
+// As by the time the timer expires the value of i reaches to 6 because of the looping.
+// and the 1000*i timer when expires they will ask for the reference of the i variable which holds 6 that time. 
 
 //
 //
@@ -72,3 +76,5 @@ const printerVarSolFunc = () => {
 printerVarSolFunc();
 
 // 1 2 3 4 5
+
+// Each time we call the a(i) function with i, it takes a new copy of
