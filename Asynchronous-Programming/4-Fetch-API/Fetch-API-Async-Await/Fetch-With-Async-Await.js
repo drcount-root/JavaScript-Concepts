@@ -44,3 +44,31 @@ fetchDataFunction1();
 // The response.json() method parses the response as JSON and returns a promise that resolves to the parsed JSON data. The await keyword is used again to wait for the promise to resolve, and the resulting data is stored in the data variable.
 
 // If the fetch call or the response.json() method throw an error, it will be caught by the catch block, which logs the error to the console.
+
+//
+//
+// async-await fetch post try catch
+//
+//
+
+const fetchReqRes = async () => {
+  try {
+    const response = await fetch("https://reqres.in/api/users?page=2", {
+      method: "POST",
+      body: JSON.stringify({
+        name: "morpheus",
+        job: "leader",
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const body = await response.json();
+    console.log(response.status);
+    console.log(body);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+fetchReqRes();
