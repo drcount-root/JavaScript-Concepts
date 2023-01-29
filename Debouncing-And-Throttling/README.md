@@ -2,6 +2,8 @@
 
 ### Debouncing: if the diff betw 2 keystroke events is equal or greater than the time delay fixed, then its debouncing.
 
+### Debouncing is a programming pattern or a technique to restrict the calling of a time-consuming function frequently, by delaying the execution of the function until a specified time to avoid unnecessary CPU cycles, and API calls and improve performance.
+
 In JavaScript, debouncing is a technique used to limit the rate at which a function can fire. It is a way of ensuring that a function is not called more often than a certain time period, by postponing its execution.
 
 When a debounced function is invoked, it sets a timer and waits for a certain amount of time, called the "debounce time," before executing the function. If the function is called again before the timer expires, the previous timer is cancelled and a new one is set. This means that the function is only executed once, after the last call, after the debounce time has passed.
@@ -15,6 +17,10 @@ Scroll events to prevent too many requests to the server while the user is scrol
 Resizing events to prevent too many layout recalculations while the user is resizing the window.
 
 ### Throttling: if the diff betw 2 func call is equal to the time delay fixed, then its debouncing.
+
+### Throttling is used to call a function after every millisecond or a particular interval of time only the first click is executed immediately.
+
+### Throttling functions generate function calls at a predetermined rate.
 
 In JavaScript, throttling is a technique used to limit the rate at which a function can be called. It is a way of ensuring that a function is not called more often than a certain frequency, by allowing only a certain number of calls within a certain time period.
 
