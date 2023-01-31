@@ -71,7 +71,23 @@ console.log(arrD);
 
 // includes
 
+//
+//
+//
+
 // at
+
+const arr = [23, 15, 67, 9];
+
+console.log(arr.at(-1));
+// 9, get the last element of the array
+
+console.log(arr.at(2));
+// 67, get the element which index is 2
+
+//
+//
+//
 
 // find
 
