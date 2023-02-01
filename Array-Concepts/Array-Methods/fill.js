@@ -1,4 +1,4 @@
-// The fill() method changes all elements in an array to a static value, from a start index (default 0) to an end index (default array.length). 
+// The fill() method changes all elements in an array to a static value, from a start index (default 0) to an end index (default array.length).
 
 // It returns the modified array.
 
@@ -23,3 +23,17 @@ console.log(array1.fill(5, 1));
 // Fill with 0 from position 2 until position 4
 console.log(array1.fill(0, 2, 4));
 // [ 6, 5, 0, 0 ]
+
+//
+//
+//
+//
+
+// Using fill() to populate an empty array
+
+const names = Array(5);
+
+names.fill("Akash", 0);
+
+console.log(names);
+// [ 'Akash', 'Akash', 'Akash', 'Akash', 'Akash' ]

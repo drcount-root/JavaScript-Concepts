@@ -82,6 +82,8 @@ currenciesUnique.forEach(function (value, _, map) {
 
 // Using forEach() on sparse arrays
 
+// callbackFn is invoked only for array indexes which have assigned values. It is not invoked for empty slots in sparse arrays.
+
 const arraySparse = [1, 3 /* empty */, , 7];
 let numCallbackRuns = 0;
 
