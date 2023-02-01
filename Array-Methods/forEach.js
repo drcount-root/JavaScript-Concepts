@@ -1,7 +1,10 @@
 // The forEach() method executes a provided function once for each array element.
 
-// forEach((item, index, array) => {}, thisArg)
 // return value => undefined
+
+// forEach(function (item, index, array) { /* … */ }, thisArg)
+
+// forEach((item, index, array) => { /* … */ })
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
