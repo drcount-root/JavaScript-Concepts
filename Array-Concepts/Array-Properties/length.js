@@ -1,6 +1,6 @@
 // The length data property of an Array instance represents the number of elements in that array.
 
-// A non-negative integer less than 2^32 .
+// A non-negative integer upto ( 2^32 - 1 ) .
 
 const clothing = ["shoes", "shirts", "socks", "sweaters"];
 
