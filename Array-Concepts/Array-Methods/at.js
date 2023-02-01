@@ -4,14 +4,26 @@
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-const lastElem = arr.at(-1);
+const lastElem = movements.at(-1);
 
 console.log(lastElem);
 // 1300
 
 //
 
-const thirdElem = arr.at(2);
+const thirdElem = movements.at(2);
 
 console.log(thirdElem);
 // -400
+
+//
+//
+
+const arrayLike = {
+  length: 2,
+  0: "a",
+  1: "b",
+};
+
+console.log(Array.prototype.at.call(arrayLike, -1)); 
+// "b"
