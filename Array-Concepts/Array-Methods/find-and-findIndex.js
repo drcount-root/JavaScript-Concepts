@@ -48,8 +48,33 @@ function isPrime(item, index, array) {
   return item > 1;
 }
 
-console.log([4, 6, 8, 12].find(isPrime)); 
+console.log([4, 6, 8, 12].find(isPrime));
 // undefined, not found
 
-console.log([4, 5, 8, 12].find(isPrime)); 
+console.log([4, 5, 8, 12].find(isPrime));
 // 5
+
+//
+//
+//
+//
+//
+//
+
+// findIndex() method returns the index of the first element in an array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
+
+// findIndex((element, index, array) => { /* … */ })
+
+// findIndex(function (element, index, array) { /* … */ }, thisArg)
+
+const arrayB = [5, 12, 8, 130, 44];
+
+const isLargeNumber = (element) => element > 13;
+
+console.log(arrayB.findIndex(isLargeNumber));
+// 3
+
+const mumber = (element) => element < 3;
+
+console.log(arrayB.findIndex(mumber));
+// -1
