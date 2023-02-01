@@ -22,6 +22,8 @@ console.log(res);
 //
 //
 
+// Using thisArg
+
 class Counter {
   constructor() {
     this.sum = 0;
@@ -72,3 +74,49 @@ currenciesUnique.forEach(function (value, _, map) {
 });
 
 // set only store unique values
+
+//
+//
+//
+//
+
+// Using forEach() on sparse arrays
+
+const arraySparse = [1, 3 /* empty */, , 7];
+let numCallbackRuns = 0;
+
+arraySparse.forEach((element) => {
+  console.log({ element });
+  numCallbackRuns++;
+});
+
+console.log({ numCallbackRuns });
+
+// { element: 1 }
+// { element: 3 }
+// { element: 7 }
+// { numCallbackRuns: 3 }
+
+//
+//
+//
+
+// Flatten an array
+
+const flatten = (arr) => {
+  const result = [];
+  arr.forEach((item) => {
+    if (Array.isArray(item)) {
+      result.push(...flatten(item));
+    } else {
+      result.push(item);
+    }
+  });
+  return result;
+};
+
+// Usage
+const nested = [1, 2, 3, [4, 5, [6, 7], 8, 9]];
+console.log(flatten(nested)); 
+
+// [1, 2, 3, 4, 5, 6, 7, 8, 9]
