@@ -236,7 +236,59 @@ console.log([1, , 3, 4].reverse()); // [4, 3, empty, 1]
 //
 //
 
+// Using slice() on sparse arrays
+
+// The array returned from slice() may be sparse if the source is sparse.
+
+console.log([1, 2, , 4, 5].slice(1, 4)); // [2, empty, 4]
+
 //
 //
 //
 //
+
+// Using some() on sparse arrays
+
+// some() will not run its predicate on empty slots.
+
+console.log([1, , 3].some((x) => x === undefined)); // false
+console.log([1, , 1].some((x) => x !== 1)); // false
+console.log([1, undefined, 1].some((x) => x !== 1)); // true
+
+//
+//
+//
+//
+
+// Using sort() on sparse arrays
+
+// Empty slots are moved to the end of the array.
+
+// The sort() method preserves empty slots. If the source array is sparse, the empty slots are moved to the end of the array, and always come after all the undefined.
+
+console.log(["a", "c", , "b"].sort()); // ['a', 'b', 'c', empty]
+console.log([, undefined, "a", "b"].sort()); // ["a", "b", undefined, empty]
+
+//
+//
+//
+//
+
+// Using splice() on sparse arrays
+
+// The splice() method preserves the array's sparseness.
+
+const arr1 = [1, , 3, 4, , 6];
+console.log(arr1.splice(1, 2)); // [empty, 3]
+console.log(arr1); // [1, 4, empty, 6]
+
+//
+//
+//
+//
+
+// Using toString() on sparse arrays
+
+// Following the behavior of join(), toString() treats empty slots the same as undefined and produces an extra separator:
+
+console.log([1, , 3].toString()); // '1,,3'
