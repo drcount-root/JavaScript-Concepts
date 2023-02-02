@@ -183,6 +183,37 @@ console.log([1, , 3].indexOf(undefined));
 //
 //
 
+// When used on sparse arrays, the keys() method iterates empty slots as if they have the value undefined.
+
+const arr = ["a", , "c"];
+const sparseKeys = Object.keys(arr);
+const denseKeys = [...arr.keys()];
+console.log(sparseKeys); // ['0', '2']
+console.log(denseKeys); // [0, 1, 2]
+
+//
+//
+//
+//
+
+// A sparse array remains sparse after map(). The indices of empty slots are still empty in the returned array, and the callback function won't be called on them.
+
+console.log(
+  [1, , 3].map((x, index) => {
+    console.log(`Visit ${index}`);
+    return x * 2;
+  })
+);
+
+// Visit 0
+// Visit 2
+// [2, empty, 6]
+
+//
+//
+//
+//
+
 //
 //
 //

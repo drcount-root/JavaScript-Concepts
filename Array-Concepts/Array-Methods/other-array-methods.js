@@ -67,24 +67,6 @@ console.log(arrD);
 //
 //
 
-// indexOf
-
-// includes
-
-//
-//
-//
-
-// find
-
-// findIndex
-
-// flat
-
-// keys
-
-// values
-
 // sort
 
 // some
