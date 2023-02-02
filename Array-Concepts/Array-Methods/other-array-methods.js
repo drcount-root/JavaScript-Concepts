@@ -70,9 +70,3 @@ console.log(arrD);
 // sort
 
 // some
-
-// Array.of()
-
-// Array.from()
-
-// fill
