@@ -226,6 +226,11 @@ console.log([1, 2, undefined, 4].reduce((a, b) => a + b)); // NaN
 //
 //
 
+// The reverse() method preserves empty slots. If the source array is sparse, the empty slots' corresponding new indices are deleted and also become empty slots.
+
+console.log([1, , 3].reverse()); // [3, empty, 1]
+console.log([1, , 3, 4].reverse()); // [4, 3, empty, 1]
+
 //
 //
 //

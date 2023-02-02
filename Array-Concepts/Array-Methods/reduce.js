@@ -115,3 +115,20 @@ console.log(doubledPositiveNumbers); // [12, 4]
 
 console.log([1, 2, , 4].reduce((a, b) => a + b)); // 7
 console.log([1, 2, undefined, 4].reduce((a, b) => a + b)); // NaN
+
+//
+//
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+const balance = movements.reduce((acc, cur) => acc + cur, 0);
+console.log(balance);
+// 3840
+
+// Maximum value
+const max = movements.reduce((acc, mov) => {
+  if (acc > mov) return acc;
+  else return mov;
+}, movements[0]);
+console.log(max);
+// 3000
