@@ -122,7 +122,7 @@ console.log(arr5.flat());
 
 const array3 = [1, , 3, ["a", , ["d", , "e"]]];
 
-console.log(array3.flat(Infinity)); 
+console.log(array3.flat(Infinity));
 // [ 1, 3, "a", "d", "e" ]
 
 //
@@ -148,6 +148,40 @@ console.log({ numCallbackRuns });
 // { element: 3 }
 // { element: 7 }
 // { numCallbackRuns: 3 }
+
+//
+//
+//
+//
+
+// Array.from() never creates a sparse array. If the arrayLike object is missing some index properties, they become undefined in the new array.
+
+//
+//
+//
+//
+
+// Using includes() on sparse arrays
+
+// You can search for undefined in a sparse array and get true.
+
+console.log([1, , 3].includes(undefined)); // true
+
+//
+//
+//
+//
+
+// The indexOf() method skips empty slots in sparse arrays.
+// You cannot use indexOf() to search for empty slots in sparse arrays.
+
+console.log([1, , 3].indexOf(undefined));
+// -1
+
+//
+//
+//
+//
 
 //
 //
