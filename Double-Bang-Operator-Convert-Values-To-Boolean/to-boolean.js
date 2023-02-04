@@ -53,6 +53,14 @@ console.log(!!number); // true
 
 console.log(Boolean(number)); // true
 
+// truthy values
+
+{}  // !!{} true
+[]  // !![] true
+"anything"  // !!"anything" true
+3.14  // !!3.14 true
+new Date()  // !!new Date() true
+
 // In JavaScript, there are 6 falsy values. 
 
 false
@@ -62,7 +70,7 @@ NaN
 0
 ""
 
-// converting any of these to a boolean, it will return false.
+// converting any of these falsy to a boolean, it will return false.
 
 !!false // false
 !!undefined // false
