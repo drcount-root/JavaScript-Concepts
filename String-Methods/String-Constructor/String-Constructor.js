@@ -34,3 +34,16 @@ console.log(typeof b); // "string"
 // Constructor produces an instance of the type String (an object wrapper).
 
 // Function produces a string (the primitive type) as promised.
+
+//
+//
+//
+
+// Using String() to stringify a symbol
+
+// String() is the only case where a symbol can be converted to a string without throwing, because it's very explicit.
+
+const sym = Symbol("#");
+const symToStr = String(sym);
+
+console.log(symToStr);
