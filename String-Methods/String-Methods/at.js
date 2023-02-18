@@ -43,3 +43,17 @@ const str1 = "Have to find the last char";
 console.log(str1.at(-1));
 
 // r
+
+//
+//
+//
+
+const gettingLastChar = "Subham";
+
+console.log(gettingLastChar.at(-1));
+
+// 'm'
+
+console.log(typeof gettingLastChar.at(-1));
+
+// string
