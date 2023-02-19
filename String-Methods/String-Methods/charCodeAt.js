@@ -2,6 +2,8 @@
 
 // Returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.
 
+// charCodeAt(index)
+
 const sentence = "The quick brown fox jumps over the lazy dog.";
 
 const index = 4;
