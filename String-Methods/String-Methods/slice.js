@@ -1,5 +1,9 @@
 // returns a new string, without modifying the original string
 
+// slice(indexStart)
+// slice(indexStart, indexEnd)
+
+
 const str = "Typewriter";
 
 console.log(str.slice(3));
