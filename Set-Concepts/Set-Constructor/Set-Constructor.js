@@ -13,3 +13,13 @@ console.log(set1.has(5));
 console.log(set1.has(6));
 //  false
 
+//
+//
+//
+
+// Array to Set
+
+const gaming = new Set([3, 5, 7, 5, 3, 9]);
+
+console.log(gaming);
+// { 3, 5, 7, 9 }
