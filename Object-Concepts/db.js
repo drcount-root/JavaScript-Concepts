@@ -1,4 +1,4 @@
-const db = [
+[
   {
     id: 1,
     name: "New Delhi",
@@ -468,31 +468,3 @@ const db = [
     },
   },
 ];
-
-const cities = Object.values(db);
-
-// Get all the cities data
-// console.log(cities);
-
-// Get Single city data
-const oneCity = cities.map((city) => {
-  /*
-
-  // working fine
-
-  const cityId = city.id;
-  const cityName = city.name;
-  const cityWeather = Object.entries(city.weather);
-
-  console.log(`City Id: ${cityId}`);
-  console.log(`City Name: ${cityName}`);
-
-  console.log(`City Weather:`);
-  for (let i in cityWeather) {
-    console.log(`\t${cityWeather[i][0]}: ${cityWeather[i][1]}`);
-  }
-  */
-
-  const cityCategories = Object.entries(city.categories);
-  console.log(cityCategories);
-});
