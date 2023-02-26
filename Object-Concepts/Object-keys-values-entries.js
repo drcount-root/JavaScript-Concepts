@@ -475,9 +475,7 @@ const cities = Object.values(db);
 // console.log(cities);
 
 // Get Single city data
-const oneCity = cities.map((city) => {
-  /*
-
+const allCities = cities.map((city) => {
   // working fine
 
   const cityId = city.id;
@@ -491,8 +489,8 @@ const oneCity = cities.map((city) => {
   for (let i in cityWeather) {
     console.log(`\t${cityWeather[i][0]}: ${cityWeather[i][1]}`);
   }
-  */
 
-  const cityCategories = Object.entries(city.categories);
+  const cityCategories = city.categories;
   console.log(cityCategories);
+  console.log("\n\n");
 });
