@@ -474,7 +474,7 @@ const cities = Object.values(db);
 // Get all the cities data
 // console.log(cities);
 
-// Get Single city data
+// Get All cities data as a single city wise
 const allCities = cities.map((city) => {
   // working fine
 
